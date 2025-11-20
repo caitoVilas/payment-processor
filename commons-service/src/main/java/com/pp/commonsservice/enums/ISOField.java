@@ -1,0 +1,43 @@
+package com.pp.commonsservice.enums;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+/**
+ * Enum representing different ISO fields.
+ *
+ * @author caito
+ *
+ */
+@AllArgsConstructor
+@Getter
+public enum ISOField {
+    PAN(2),
+    PROCESSING_CODE(3),
+    TRANSACTION_AMOUNT(4),
+    TRANSMISSION_DATE_TIME(7),
+    SYSTEM_TRACE_AUDIT_NUMBER(11),
+    LOCAL_TRANSACTION_TIME(12),
+    LOCAL_TRANSACTION_DATE(13),
+    EXPIRATION_DATE(14),
+    MERCHANT_TYPE(18),
+    POS_ENTRY_MODE(22),
+    POS_CONDITION_CODE(25),
+    ACQUIRING_INSTITUTION_CODE(32),
+    TRACK_2_DATA(35),
+    RETRIEVAL_REFERENCE_NUMBER(37),
+    AUTHORIZATION_IDENTIFICATION_RESPONSE(38),
+    RESPONSE_CODE(39),
+    CARD_ACCEPTOR_TERMINAL_ID(41),
+    CARD_ACCEPTOR_ID(42),
+    CARD_ACCEPTOR_NAME_LOCATION(43),
+    ADDITIONAL_DATA(48),
+    CURRENCY_CODE(49),
+    PIN_DATA(52),
+    ADITIONAL_AMOUNTS(54),
+    INTEGRATED_CIRCUIT_CARD_SYSTEM_RELATE_DATA(55),
+    ORIGIANAL_DATA_ELEMENTS(90),
+    REPLACEMENT_AMOUNTS(95);
+
+    private final int fieldNumber;
+}
